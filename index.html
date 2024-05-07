@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/styles/styles.css" />
+        <title>Опрос</title>
+    </head>
+    <body>
+        <header class="container header">
+            <img src="./assets/icons/icons8-questionnaire-100.png" alt="Логотип" />
+            <h1>Опрос</h1>
+        </header>
+        <main class="container">
+            <aside class="menu">
+                <nav class="menu__navigation">
+                    <a href="#s">Регистриция</a>
+                    <a href="#s">Опрос</a>
+                    <a href="#s">Да</a>
+                </nav>
+            </aside>
+        </main>
+        <div class="modal modal-hidden" id="registration-modal">
+            <div class="modal__card">
+                <h3 class="modal__heading">Регистрация</h3>
+                <form class="registration-form" id="registration-form">
+                    <div class="registration-form__group">
+                        <label for="lastName">Фамилия</label>
+                        <input type="text" name="lastName" id="lastName" class="registration-form__text-field" />
+                    </div>
+                    <div class="registration-form__group">
+                        <label for="firstName">Имя</label>
+                        <input type="text" name="firstName" id="firstName" class="registration-form__text-field" />
+                    </div>
+                    <div class="registration-form__group">
+                        <p>Пол</p>
+                        <div class="registration-form__group-select">
+                            <input type="radio" name="gender" id="male" value="male" />
+                            <label for="male">Мужской</label>
+                        </div>
+                        <div class="registration-form__group-select">
+                            <input type="radio" name="gender" id="female" value="female" />
+                            <label for="female">Женский</label>
+                        </div>
+                    </div>
+                    <div class="registration-form__group">
+                        <label for="age">Возраст</label>
+                        <input type="number" name="age" id="age" class="registration-form__text-field" />
+                    </div>
+                    <div class="registration-form__group">
+                        <label for="login">Логин</label>
+                        <input type="text" name="login" id="login" class="registration-form__text-field" />
+                    </div>
+                    <div class="registration-form__group">
+                        <label for="password">Пароль</label>
+                        <input type="password" name="password" id="password" class="registration-form__text-field" />
+                    </div>
+                    <div class="registration-form__group">
+                        <label for="email">Почта</label>
+                        <input type="email" name="email" id="email" class="registration-form__text-field" />
+                    </div>
+                    <div class="registration-form__group">
+                        <label for="phone">Телефон</label>
+                        <input type="text" name="phone" id="phone" class="registration-form__text-field" />
+                    </div>
+                    <div class="registration-form__group">
+                        <label for="address">Адрес</label>
+                        <input type="text" name="address" id="address" class="registration-form__text-field" />
+                    </div>
+                    <div class="registration-form__group">
+                        <button type="submit">Регистрация</button>
+                        <button type="reset">Очистка полей</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="./assets/scripts/registration.js"></script>
+    </body>
+</html>

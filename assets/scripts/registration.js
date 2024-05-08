@@ -117,5 +117,9 @@ document.addEventListener('DOMContentLoaded', () => {
         regModal.classList.remove('display-hidden')
         regForm.addEventListener('submit', submitForm)
     }
-
+    document.querySelector('a[href="#reg"]').addEventListener('click', (e) => {
+        e.preventDefault()
+        regModal.classList.remove('display-hidden')
+        regForm.addEventListener('submit', submitForm)
+    })
 })

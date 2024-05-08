@@ -12,7 +12,7 @@
             <img src="./assets/icons/icons8-questionnaire-100.png" alt="Логотип" />
             <h1>Опрос</h1>
         </header>
-        <main class="container">
+        <main class="container content">
             <aside class="menu">
                 <nav class="menu__navigation">
                     <a href="#s">Регистриция</a>
@@ -20,55 +20,67 @@
                     <a href="#s">Да</a>
                 </nav>
             </aside>
+            <section class="test">
+                <div class="test__description">
+                    <h1 class="test__heading">Личностная шкала проявления тревоги</h1>
+                    <p class="test__description">Тест, на основе 60 вопросов, поможет вам определить уровень тревоги.</p>
+                </div>
+                <div class="test__content">
+
+                </div>
+                <div class="test__actions">
+                    <button class="test__button-success">Начать тест</button>
+                </div>
+            </section>
         </main>
-        <div class="modal modal-hidden" id="registration-modal">
+        <div class="modal display-hidden" id="registration-modal">
             <div class="modal__card">
                 <h3 class="modal__heading">Регистрация</h3>
                 <form class="registration-form" id="registration-form">
-                    <div class="registration-form__group">
+                    <div class="form__group">
                         <label for="lastName">Фамилия</label>
                         <input type="text" name="lastName" id="lastName" class="registration-form__text-field" />
                     </div>
-                    <div class="registration-form__group">
+                    <div class="form__group">
                         <label for="firstName">Имя</label>
                         <input type="text" name="firstName" id="firstName" class="registration-form__text-field" />
                     </div>
-                    <div class="registration-form__group">
+                    <div class="form__group">
                         <p>Пол</p>
-                        <div class="registration-form__group-select">
+                        <div class="form__group-select">
                             <input type="radio" name="gender" id="male" value="male" />
                             <label for="male">Мужской</label>
                         </div>
-                        <div class="registration-form__group-select">
+                        <div class="form__group-select">
                             <input type="radio" name="gender" id="female" value="female" />
                             <label for="female">Женский</label>
                         </div>
                     </div>
-                    <div class="registration-form__group">
+                    <div class="form__group">
                         <label for="age">Возраст</label>
                         <input type="number" name="age" id="age" class="registration-form__text-field" />
                     </div>
-                    <div class="registration-form__group">
+                    <div class="form__group">
                         <label for="login">Логин</label>
                         <input type="text" name="login" id="login" class="registration-form__text-field" />
                     </div>
-                    <div class="registration-form__group">
+                    <div class="form__group">
                         <label for="password">Пароль</label>
                         <input type="password" name="password" id="password" class="registration-form__text-field" />
                     </div>
-                    <div class="registration-form__group">
+                    <div class="form__group">
                         <label for="email">Почта</label>
                         <input type="email" name="email" id="email" class="registration-form__text-field" />
                     </div>
-                    <div class="registration-form__group">
+                    <div class="form__group">
                         <label for="phone">Телефон</label>
                         <input type="text" name="phone" id="phone" class="registration-form__text-field" />
                     </div>
-                    <div class="registration-form__group">
+                    <div class="form__group">
                         <label for="address">Адрес</label>
                         <input type="text" name="address" id="address" class="registration-form__text-field" />
                     </div>
-                    <div class="registration-form__group">
+                    <div class="form__group">
                         <button type="submit">Регистрация</button>
                         <button type="reset">Очистка полей</button>
                     </div>
@@ -76,5 +88,6 @@
             </div>
         </div>
         <script src="./assets/scripts/registration.js"></script>
+        <script src="./assets/scripts/test.js"></script>
     </body>
 </html>

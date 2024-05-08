@@ -107,14 +107,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const validatedValues = validateForm(formElements)
         if(Object.values(validatedValues).every(val =>val!== null)){
             localStorage.setItem('regData', JSON.stringify(validatedValues))
-            regModal.classList.add('modal-hidden')
+            regModal.classList.add('display-hidden')
         }
     }
 
     const regData = localStorage.getItem('regData')
     const regForm = regModal.querySelector('#registration-form')
     if (!regData) {
-        regModal.classList.remove('modal-hidden')
+        regModal.classList.remove('display-hidden')
         regForm.addEventListener('submit', submitForm)
     }
 

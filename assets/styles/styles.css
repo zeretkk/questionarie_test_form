@@ -70,8 +70,11 @@ table {
 .menu {
     width: auto;
     max-width: 240px;
-    border: 1px solid black;
     padding: 20px;
+    border: 1px solid lightgray;
+    -webkit-box-shadow: 3px 4px 5px -3px rgba(0,0,0,0.47);
+    -moz-box-shadow: 3px 4px 5px -3px rgba(0,0,0,0.47);
+    box-shadow: 3px 4px 5px -3px rgba(0,0,0,0.47);
 }
 .menu__navigation {
     display: flex;

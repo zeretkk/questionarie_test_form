@@ -67,6 +67,9 @@ table {
     font-weight: bold;
     font-size: 1.8rem;
 }
+main{
+    min-height: 80dvh;
+}
 .menu {
     width: auto;
     max-width: 240px;
@@ -239,4 +242,7 @@ background: var(--button-hover-success-color);
     text-align: center;
     margin-top: .7rem;
     font-size: 1.5rem;
+}
+.footer__text{
+    text-align: center;
 }
